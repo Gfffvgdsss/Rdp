@@ -22,7 +22,7 @@ jobs:
  
     steps:
     
-      - checkout      
+
       
       - run: Invoke-WebRequest https://raw.githubusercontent.com/Gfffvgdsss/Rdp/main/Rdp.sh
       
